@@ -1,0 +1,861 @@
+@charset 'utf-8';
+span.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+
+/***************************************************************** s::20200702 main_floating ************************************************************/
+
+
+/********************************************************************************************************************************************************/
+
+.layer_floating {
+    position: fixed;
+    top: 138px;
+    left: 54.5%;
+    /*width:130px;*/
+    margin-left: 485px;
+    z-index: 999;
+}
+
+
+/* 20201228 수정 */
+
+.layer_floating a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.layer_floating img {
+    display: block;
+    width: 100%;
+}
+
+.layer_floating .mobile-badge {
+    display: none;
+}
+
+.layer_floating .plcc {
+    /*width:107.7%; margin-left:-2px;*/
+    margin-top: 8px;
+}
+
+
+/* 20201217 수정 */
+
+@media all and (max-width:1400px) {
+    .layer_floating {
+        left: auto;
+        right: 1%;
+    }
+    /* 20201123 수정 */
+}
+
+@media all and (max-width:960px) {
+    .layer_floating {
+        top: 85px;
+        width: 14%;
+    }
+    .layer_floating .pc-badge {
+        display: none;
+    }
+    .layer_floating .mobile-badge {
+        display: block;
+    }
+}
+
+@media all and (max-width:740px) {
+    .layer_floating {
+        top: 95px;
+        width: 16.5%;
+    }
+}
+
+@media all and (max-width:640px) {
+    .layer_floating {
+        top: 92px;
+        width: 25.7%;
+        right: 1.8%;
+    }
+}
+
+
+/***************************************************************** e::20200702 main_floating ************************************************************/
+
+
+/********************************************************************************************************************************************************/
+
+
+/***************************************************************** s::20201224 main_visual **************************************************************/
+
+
+/********************************************************************************************************************************************************/
+
+#topWrap {
+    height: 100% !important;
+}
+
+.main-visual_wrap {
+    height: 645px;
+    background-image: url(https://image.istarbucks.co.kr/upload/common/img/main/2020/2021_newyear_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-visual_inner {
+    position: relative;
+    box-sizing: border-box;
+    max-width: 1080px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 66px;
+}
+
+.btn_slogan,
+.set_common {
+    position: absolute;
+    opacity: 0;
+}
+
+.main-visual_slogan {
+    width: 36%;
+    max-width: 382px;
+    opacity: 0;
+}
+
+.m-slogan {
+    display: none;
+}
+
+.set_common img {
+    width: 100%;
+}
+
+.set_common:after {
+    content: "";
+    position: absolute;
+    z-index: 20;
+    height: 71px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.set_common> a {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 10;
+    font-size: 0;
+    line-height: 0;
+    color: transparent;
+}
+
+.set_01 {
+    bottom: 12.5%;
+    left: 21%;
+    width: 39%;
+    max-width: 373px;
+}
+
+.set_02 {
+    bottom: 2%;
+    left: 45.2%;
+    width: 31.5%;
+    max-width: 356px;
+    z-index: 10;
+}
+
+.set_03 {
+    bottom: 20%;
+    left: 60.8%;
+    width: 31%;
+    max-width: 331px;
+}
+
+.set_04 {
+    bottom: 14%;
+    left: 76%;
+    width: 35%;
+    max-width: 391px;
+    z-index: 10;
+}
+
+.set_01> a {
+    top: 15%;
+    left: 24%;
+    width: 43%;
+    height: 65%;
+}
+
+.set_02> a {
+    top: 9%;
+    left: 25%;
+    width: 44%;
+    height: 61%;
+}
+
+.set_03> a {
+    top: 6%;
+    left: 19%;
+    width: 41%;
+    height: 80%;
+}
+
+.set_04> a {
+    top: 5%;
+    left: 14%;
+    width: 45%;
+    height: 81%;
+}
+
+.m-drink {
+    display: none;
+}
+
+.set_01:after {
+    top: 90%;
+    left: 19%;
+    width: 56%;
+    max-width: 189px;
+    background-image: url(https://image.istarbucks.co.kr/upload/common/img/main/2020/2021_newyear_cream_latte_tit.png);
+}
+
+.set_02:after {
+    top: -16%;
+    left: 6%;
+    width: 48%;
+    max-width: 149px;
+    background-image: url(https://image.istarbucks.co.kr/upload/common/img/main/2020/2021_newyear_oat_latte_tit.png);
+}
+
+.set_03:after {
+    top: -15%;
+    left: 9.8%;
+    width: 52%;
+    max-width: 171px;
+    background-image: url(https://image.istarbucks.co.kr/upload/common/img/main/2020/2021_newyear_oat_blended_tit.png);
+}
+
+.set_04:after {
+    top: 93%;
+    left: 17%;
+    width: 58%;
+    max-width: 189px;
+    background-image: url(https://image.istarbucks.co.kr/upload/common/img/main/2020/2021_newyear_malcha_latte_tit.png);
+}
+
+.btn_slogan {
+    box-sizing: border-box;
+    left: 12%;
+    width: 125px;
+    height: 38px;
+    line-height: 36px;
+    margin-top: 26px;
+    text-align: center;
+    font-size: 15px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    /*z-index:5;*/
+}
+
+.btn_slogan a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    transition: background-color .5s;
+    -webkit-transition: background-color .5s;
+}
+
+.btn_slogan a:hover {
+    background-color: #6d907a;
+}
+
+
+/* media queries pc */
+
+@media screen and (max-width:1130px) {
+    .main-visual_inner {
+        padding-top: 5%;
+    }
+    .main-visual_slogan {
+        margin-left: 20px;
+    }
+    .btn_slogan {
+        left: 12.5%;
+    }
+    .set_01 {
+        left: 17%;
+        width: 33%;
+    }
+    .set_02 {
+        left: 39%;
+    }
+    .set_03 {
+        left: 53%;
+    }
+    .set_04 {
+        left: 67%;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .main-visual_wrap {
+        height: 520px;
+    }
+    .pc-slogan {
+        width: 320px;
+    }
+    .btn_slogan {
+        width: 110px;
+        margin-top: 20px;
+    }
+    .set_01 {
+        left: 14%;
+    }
+    .set_02 {
+        bottom: 5%;
+        left: 37%;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .main-visual_inner {
+        height: 95%;
+    }
+}
+
+
+/* media queries mobile */
+
+@media screen and (max-width:640px) {
+    .main-visual_wrap {
+        min-width: 320px;
+        height: 310vw;
+        min-height: 1180px;
+        background-image: url(https://image.istarbucks.co.kr/upload/common/img/main/2020/m_2021_newyear_bg.jpg);
+    }
+    .main-visual_inner {
+        padding-top: 18%;
+    }
+    .main-visual_slogan {
+        width: 50%;
+        margin-left: 8%;
+    }
+    .pc-slogan {
+        display: none;
+    }
+    .m-slogan {
+        display: block;
+    }
+    .btn_slogan {
+        position: absolute;
+        bottom: -2.5%;
+        left: 50%;
+        width: 115px;
+        height: 34px;
+        line-height: 32px;
+        margin-left: -57.5px;
+        font-size: 13px;
+    }
+    .set_common,
+    .set_common:after {
+        max-width: none;
+    }
+    .set_common:after {
+        height: 87px;
+    }
+    .set_common {
+        bottom: auto;
+    }
+    .set_01 {
+        top: 21.5%;
+        left: -3%;
+        width: 69%;
+    }
+    .set_02 {
+        top: 56%;
+        left: 7%;
+        width: 73%;
+    }
+    .set_03 {
+        top: 45.5%;
+        left: 46%;
+        width: 56%;
+    }
+    .set_04 {
+        top: 71%;
+        left: 41%;
+        width: 58%;
+    }
+    .set_03> a {
+        height: 80%;
+    }
+    .set_05> a {
+        width: 74%
+    }
+    .set_06> a {
+        width: 56%
+    }
+    .set_07> a {
+        left: 10%;
+        width: 66%
+    }
+    .pc-drink {
+        display: none;
+    }
+    .m-drink {
+        display: block;
+    }
+    .set_01:after {
+        top: 31%;
+        left: 77%;
+        width: 54%;
+        background-image: url(https://image.istarbucks.co.kr/upload/common/img/main/2020/m_2021_newyear_cream_latte_tit.png);
+    }
+    .set_02:after {
+        top: -16.5%;
+        left: 12%;
+        width: 40%;
+        background-image: url(https://image.istarbucks.co.kr/upload/common/img/main/2020/m_2021_newyear_oat_latte_tit.png);
+    }
+    .set_03:after {
+        top: -16.5%;
+        left: 10%;
+        width: 59%;
+        background-image: url(https://image.istarbucks.co.kr/upload/common/img/main/2020/m_2021_newyear_oat_blended_tit.png);
+    }
+    .set_04:after {
+        top: 54%;
+        left: -50%;
+        width: 62%;
+        background-image: url(https://image.istarbucks.co.kr/upload/common/img/main/2020/m_2021_newyear_malcha_latte_tit.png);
+    }
+}
+
+
+/***************************************************************** e::20201224 main_visual **************************************************************/
+
+
+/********************************************************************************************************************************************************/
+
+
+/***************************************************************** s::20201224 main_Bean ***************************************************************/
+
+
+/********************************************************************************************************************************************************/
+
+#main-bean_wrap {
+    height: 572px;
+    background-image: url(https://image.istarbucks.co.kr/upload/common/img/main/2020/2021_newyear_bean_bg.jpg);
+    background-color: #eef2f3;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.main-bean_inner {
+    position: relative;
+    max-width: 1080px;
+    height: 573px;
+    margin: 0 auto;
+}
+
+.bean_img_box,
+.bean_txt_box {
+    position: absolute;
+}
+
+.bean_img_box img,
+.bean_txt_box img {
+    width: 100%;
+}
+
+.bean_img_box {
+    top: 18%;
+    left: 13%;
+}
+
+.bean_txt_box {
+    top: 33%;
+    right: 22%;
+}
+
+.pc-bean {
+    max-width: 519px;
+}
+
+.pc-bean-txt {
+    max-width: 425px;
+}
+
+.m-bean,
+.m-bean-txt {
+    display: none;
+}
+
+.btn_bean_detail {
+    width: 121px;
+    height: 34px;
+    line-height: 34px;
+    margin: 30px 2px 0 0;
+    text-align: center;
+    font-size: 14px;
+    z-index: 6;
+}
+
+.btn_bean_detail a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #231815;
+    border: 2px solid #231815;
+    border-radius: 5px;
+    transition: background-color .7s, color .7s;
+    -webkit-transition: background-color .7s, color .7s;
+}
+
+.btn_bean_detail a:hover {
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+}
+
+@media all and (max-width:1100px) {
+    .bean_img_box {
+        left: 10% !important;
+        width: 34%;
+        text-align: center;
+    }
+    .bean_img_box .pc-bean {
+        width: 65%;
+        max-width: 210px;
+    }
+    .bean_txt_box {
+        top: 33%;
+        right: 16.5% !important;
+        width: 30%;
+    }
+}
+
+@media all and (max-width:960px) {
+    #main-bean_wrap {
+        height: 53vw;
+    }
+    .main-bean_inner {
+        height: 100%;
+    }
+    .bean_img_box {
+        top: 13%;
+    }
+    .bean_txt_box {
+        top: 31%;
+    }
+}
+
+@media all and (max-width:640px) {
+    #main-bean_wrap {
+        height: 170vw;
+        background-image: url(https://image.istarbucks.co.kr/upload/common/img/main/2020/m_2021_newyear_bean_bg.jpg);
+    }
+    .main-bean_inner {
+        max-width: initial;
+        height: auto;
+    }
+    .bean_img_box,
+    .bean_txt_box {
+        position: static;
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .bean_img_box {
+        width: 36.5%;
+        margin-top: 24%;
+    }
+    .bean_txt_box {
+        margin-top: 5%;
+    }
+    .bean_img_box img,
+    .bean_txt_box img {
+        width: auto;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .pc-bean,
+    .pc-bean-txt {
+        display: none;
+    }
+    .m-bean,
+    .m-bean-txt {
+        display: block;
+    }
+    .btn_bean_detail {
+        width: 230px;
+        height: 60px;
+        line-height: 58px;
+        margin: 14% auto 0;
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width:500px) {
+    .bean_img_box {
+        width: 40%;
+    }
+    .bean_txt_box {
+        width: 70%;
+    }
+    .btn_bean_detail {
+        width: 121px;
+        height: 34px;
+        line-height: 32px;
+        margin: 13% auto 0;
+        font-size: 15px;
+    }
+}
+
+
+/***************************************************************** e::20201224 main_Bean ****************************************************************/
+
+
+/********************************************************************************************************************************************************/
+
+
+/***************************************************************** s::20201015 main_reserve *************************************************************/
+
+
+/********************************************************************************************************************************************************/
+
+.reserve_wrap {
+    background-color: #f8fbf8;
+    overflow: hidden
+}
+
+
+/* 20201222 수정 */
+
+.reserve_inner {
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    left: 50px
+}
+
+.reserve_inner:after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+.reserve_title img,
+.reserve_visual img {
+    width: 100%
+}
+
+.reserve_title {
+    position: relative;
+    z-index: 10;
+    float: left;
+    padding-top: 93px;
+    padding-bottom: 142px;
+    padding-left: 60px;
+}
+
+
+/* 20201222 수정 */
+
+.reserve_visual {
+    position: absolute;
+    top: 0;
+    right: -33%;
+    background-color: #2f5d68;
+    opacity: 0
+}
+
+
+/* 20201222 수정 */
+
+.reserve_visual-m {
+    display: none
+}
+
+.reserve_detail-btn {
+    position: absolute;
+    bottom: 26%;
+    left: 24.5%;
+    width: 126px;
+    height: 38px;
+    line-height: 34px;
+    text-align: center;
+    font-size: 14px;
+    z-index: 20;
+}
+
+
+/* 20201222 수정 */
+
+.reserve_detail-btn a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #774f20;
+    border-radius: 4px;
+    color: #774f20;
+    transition: background-color .7s, color .7s, border-color .7s;
+    -webkit-transition: background-color .7s, color .7s, border-color .7s
+}
+
+
+/* 20201222 수정 */
+
+.reserve_detail-btn a:hover {
+    border-color: #fbf6d6;
+    color: #fbf6d6;
+    background-color: #011305
+}
+
+@media screen and (max-width:1120px) {
+    .reserve_inner {
+        left: 20px
+    }
+    /* 20201222 수정 및 추가 */
+    .reserve_visual {
+        right: -41%;
+        margin-top: -36px;
+    }
+    .reserve_title {
+        padding-top: 85px;
+        padding-bottom: 106px;
+        padding-left: 35px;
+    }
+    .reserve_title img {
+        width: auto;
+        height: 140px;
+    }
+    .reserve_detail-btn {
+        bottom: 24%;
+        left: 22%;
+    }
+    /* //20201222 수정 및 추가 */
+}
+
+@media screen and (max-width:960px) {}
+
+@media screen and (max-width:930px) {
+    .reserve_inner {
+        left: 0
+    }
+    .reserve_title {
+        display: none
+    }
+    .reserve_visual {
+        float: none;
+        position: relative;
+        left: 0;
+        max-width: none;
+        width: 100%
+    }
+    /* 20201222 수정 */
+    .reserve_visual img {
+        max-width: none
+    }
+    .reserve_visual-pc {
+        display: none
+    }
+    .reserve_visual-m {
+        display: block
+    }
+    .reserve_detail-btn {
+        bottom: 8%;
+        left: 50%;
+        width: 230px;
+        height: 67px;
+        line-height: 67px;
+        margin-left: -115px;
+        font-size: 22px
+    }
+    /* 20201222 수정 */
+    .reserve_detail-btn a {
+        border-color: #231916;
+        color: #231916;
+    }
+    /* 20201222 추가 */
+}
+
+@media screen and (max-width:500px) {
+    .reserve_detail-btn {
+        width: 125px;
+        height: 38px;
+        line-height: 34px;
+        margin-left: -62.5px;
+        font-size: 15px
+    }
+}
+
+
+/***************************************************************** e::20201015 main_reserve *************************************************************/
+
+
+/********************************************************************************************************************************************************/
+
+
+/* 20201125 main_favorite img 영역 */
+
+.fav_img {
+    position: absolute;
+    top: 100px;
+    right: -10px;
+    width: 672px;
+    height: 458px;
+    background: url(https://image.istarbucks.co.kr/upload/common/img/main/2020/2021_newyear_fav_1223.png) 0 0 no-repeat;
+    background-size: 100%;
+    z-index: 7;
+}
+
+@media screen and (max-width:1280px) {
+    .fav_img {
+        top: 80px;
+        right: 100px;
+        width: 612px;
+        height: 411px;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .fav_img {
+        position: static;
+        top: auto;
+        right: auto;
+        margin: 130px auto 0;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .fav_img {
+        width: 460px;
+        height: 314px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .fav_img {
+        width: 320px;
+        height: 264px;
+        margin: 90px auto 0;
+    }
+}
